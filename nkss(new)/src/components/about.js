@@ -47,10 +47,10 @@ const About = () => {
                     </Grid>
                 </div>
             </Box>
-            <div style={{ padding: "60px 0" }}>
+            <Grid sx={{ padding: { sm: "30px 0", md: "60px 0" } }}>
                 <Box className='footer' mx={{ xs: 2, sm: 4, md: 8 }}>
-                    <Grid container rowSpacing={1} columnSpacing={{ xs: 1 }} justifyContent={"center"}>
-                        <Grid item sm={12} md={6} lg={3} display={"flex"} justifyContent={"center"}>
+                    <Grid container rowSpacing={1} columnSpacing={{ xs: 1 }} justifyContent={{ sm: "left", md: "center" }}>
+                        <Grid item sm={12} md={6} lg={3} display={"flex"} justifyContent={{ sm: "left", md: "center" }}>
                             <div >
                                 <Typography variant='h6' className='font' color={"#a805cd"} fontSize={"35px"}>Quick Links</Typography>
                                 <ul>
@@ -62,7 +62,7 @@ const About = () => {
                                 </ul>
                             </div>
                         </Grid>
-                        <Grid item sm={12} md={6} lg={3} display={"flex"} justifyContent={"center"}>
+                        <Grid item sm={12} md={6} lg={3} display={"flex"} justifyContent={{ sm: "left", md: "center" }}>
                             <div >
                                 <Typography variant='h6' className='font' color={"#a805cd"} fontSize={"35px"}>Our Services</Typography>
                                 <ul>
@@ -78,7 +78,7 @@ const About = () => {
 
                             </div>
                         </Grid>
-                        <Grid item sm={12} md={6} lg={3} display={"flex"} justifyContent={"center"}>
+                        <Grid item sm={12} md={6} lg={3} display={"flex"} justifyContent={{ sm: "left", md: "center" }}>
                             <div >
                                 <Typography variant='h6' className='font' color={"#a805cd"} fontSize={"35px"}>Digital Bootcamp</Typography>
                                 <ul>
@@ -101,7 +101,7 @@ const About = () => {
                         </Grid>
                     </Grid>
                 </Box>
-            </div>
+            </Grid>
         </Grid>
     )
 }

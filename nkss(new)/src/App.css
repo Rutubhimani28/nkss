@@ -73,22 +73,15 @@ body {
 }
 
 
-/* .aboutimg {
-  z-index: 999999999;
-  top: 555px;
+.aboutimg {
   height: 100%;
-  width: 33%;
-  position: absolute;
-  right: 43px;
+  width: 100%;
 }
 
 .aboutimg2 {
-  z-index: 999999999;
-  top: 1235px;
-  width: 33%;
-  position: absolute;
-  left: 10px;
-} */
+  height: 100%;
+  width: 100%;
+}
 
 .clientBox {
   background-color: #D9D9D9;
@@ -137,5 +130,38 @@ body {
   .servicesImg {
     position: static;
     width: 100% !important;
+  }
+
+  .aboutimg {
+    height: 80%;
+    width: 80%;
+  }
+
+  .aboutimg2 {
+    height: 80%;
+    width: 80%;
+  }
+
+  .startBtn {
+    margin-top: 10px;
+    font-size: 15px !important;
+    padding: 3px 10px !important;
+  }
+
+  .arrowicon {
+    height: 18px !important;
+    width: 18px !important;
+    margin-left: 6px;
+    margin-top: 4px;
+  }
+
+  .seemore {
+    font-size: 16px !important;
+    padding: 6px 10px 5px 10px !important;
+  }
+
+  .arrowicon1 {
+    height: 18px !important;
+    width: 18px !important;
   }
 }

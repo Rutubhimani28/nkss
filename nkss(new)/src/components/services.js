@@ -17,8 +17,8 @@ const services = () => {
                         </button>
                     </div>
                 </Grid>
-                <Grid item xs={12} md={4} >
-                    <img src={banner} height={"100%"} className='aboutimg' width={"100%"} />
+                <Grid item xs={12} md={4} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                    <img src={banner}  className='aboutimg'  />
 
                 </Grid>
             </Grid>
@@ -27,7 +27,7 @@ const services = () => {
                 // my={{ sm: 10, md: 40 }} py={{ sm: 10, md: 20 }}
                 flexDirection={{ xs: 'column-reverse', sm: 'column-reverse', md: 'row' }}
             >
-                <Grid item xs={12} md={4}>
+                <Grid item xs={12} md={4} style={{ display: "flex", justifyContent: "center",  alignItems: "center" }}>
                     <img src={start} height={"100%"} className='aboutimg2' width={"100%"} />
                 </Grid>
                 <Grid item xs={12} md={8} textAlign={"center"} position={"relative"} zIndex={"9999"} style={{ display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }} >
