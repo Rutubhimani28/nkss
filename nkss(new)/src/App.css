@@ -117,7 +117,7 @@ body {
   background-image: url(../src/components/asset/images/aboutbg.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  /* background-size: cover; */
   width: 100%;
   margin-top: 14px;
 }
