@@ -122,6 +122,14 @@ body {
   margin-top: 14px;
 }
 
+@media (max-Width:1200px) {
+  .servicesImg {
+    position: static;
+    width: 100% !important;
+    height: 90%;
+  }
+}
+
 @media (max-Width:786px) {
   .aboutWraper {
     margin-top: 25px;

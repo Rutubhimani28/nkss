@@ -132,53 +132,51 @@ function ResponsiveAppBar() {
                             />
                         </Search>
                     </div>
-                    <>
-                        {/* <Box > */}
-                        <IconButton
-                            size="large"
-                            aria-label="account of current user"
-                            aria-controls="menu-appbar"
-                            aria-haspopup="true"
-                            onClick={handleDrawerOpen}
-                            color="inherit"
-                            sx={{ display: { xs: 'block', md: 'none' } }}
-                        >
-                            <MenuIcon />
-                        </IconButton>
-                        <Drawer
-                            sx={{
-                                width: drawerWidth,
-                                '& .MuiDrawer-paper': {
-                                    width: drawerWidth,
-                                    boxSizing: 'border-box',
-                                },
-                            }}
-                            variant="persistent"
-                            anchor="left"
-                            open={open}
-
-                        >
-                            <DrawerHeader>
-                                <IconButton onClick={handleDrawerClose} backgroundColor="#a705c7">
-                                    {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-                                </IconButton>
-                            </DrawerHeader>
-                            <List>
-                                <img src={logo} height={"25%"} width={"25%"} />
-                            </List>
-                            <List>
-                                {pages.map((text, index) => (
-                                    <ListItem key={text} disablePadding>
-                                        <ListItemButton>
-                                            <ListItemText primary={text} />
-                                        </ListItemButton>
-                                    </ListItem>
-                                ))}
-                            </List>
-                        </Drawer>
-                        {/* </Box> */}
-                    </>
                 </Box>
+                <>
+                    <IconButton
+                        size="large"
+                        aria-label="account of current user"
+                        aria-controls="menu-appbar"
+                        aria-haspopup="true"
+                        onClick={handleDrawerOpen}
+                        color="inherit"
+                        sx={{ display: { xs: 'block', md: 'none' } }}
+                    >
+                        <MenuIcon />
+                    </IconButton>
+                    <Drawer
+                        sx={{
+                            width: drawerWidth,
+                            '& .MuiDrawer-paper': {
+                                width: drawerWidth,
+                                boxSizing: 'border-box',
+                            },
+                        }}
+                        variant="persistent"
+                        anchor="left"
+                        open={open}
+
+                    >
+                        <DrawerHeader>
+                            <IconButton onClick={handleDrawerClose} backgroundColor="#a705c7">
+                                {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+                            </IconButton>
+                        </DrawerHeader>
+                        <List>
+                            <img src={logo} height={"25%"} width={"25%"} />
+                        </List>
+                        <List>
+                            {pages.map((text, index) => (
+                                <ListItem key={text} disablePadding>
+                                    <ListItemButton>
+                                        <ListItemText primary={text} />
+                                    </ListItemButton>
+                                </ListItem>
+                            ))}
+                        </List>
+                    </Drawer>
+                </>
 
 
             </Toolbar>
