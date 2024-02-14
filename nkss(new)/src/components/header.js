@@ -151,7 +151,7 @@ function ResponsiveAppBar() {
 
             >
                 <DrawerHeader>
-                    <IconButton onClick={handleDrawerClose} backgroundColor="#a705c7">
+                    <IconButton onClick={handleDrawerClose} style={{ color: "#ffffff" }}>
                         {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
                     </IconButton>
                 </DrawerHeader>
