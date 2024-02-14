@@ -108,8 +108,8 @@ body {
 .serviceWraper {
   background-image: url(../src/components/asset/images/servicebg.png);
   background-repeat: no-repeat;
-  background-position: 25% 7%;
-  background-size: cover;
+  background-position: 65% 5%;
+  /* background-size: cover; */
   width: 100%;
 }
 
