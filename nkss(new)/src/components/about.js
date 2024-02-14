@@ -17,7 +17,7 @@ const About = () => {
                     </Grid>
                     <Grid item xs={12} md={8} textAlign={"center"} display={"flex"} flexDirection={"column"} justifyContent={"space-between"} alignItems={"center"}>
                         <Typography variant='h4' className='font' color={"#A805CD"} fontSize={{ sm: "40px", md: "80px" }}>About Us</Typography>
-                        <Typography variant='h6' className='khula' color={"#4E4D78"} fontSize={{ sm: "20px", md: "30px" }}>Nkss Digital Services helps you elevate your online presence with expert management, development, and design solutions. Craft captivating experiences, optimize your processes, and achieve tangible results for all your digital goals.</Typography>
+                        <Typography variant='h6' py={1} className='khula' color={"#4E4D78"} fontSize={{ sm: "20px", md: "30px" }}>Nkss Digital Services helps you elevate your online presence with expert management, development, and design solutions. Craft captivating experiences, optimize your processes, and achieve tangible results for all your digital goals.</Typography>
                         <button variant="contained" className='seemore' >
                             <span> See more</span><ChevronRightIcon className='arrowicon1' />
                         </button>
