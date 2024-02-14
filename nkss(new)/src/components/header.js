@@ -27,27 +27,11 @@ const pages = ['About Us', 'Our Services', 'Digital Bootcamp', 'Contact Us'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
-    const [anchorElNav, setAnchorElNav] = React.useState(null);
-    const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-    const handleOpenNavMenu = (event) => {
-        setAnchorElNav(event.currentTarget);
-    };
-    const handleOpenUserMenu = (event) => {
-        setAnchorElUser(event.currentTarget);
-    };
-
-    const handleCloseNavMenu = () => {
-        setAnchorElNav(null);
-    };
-
-    const handleCloseUserMenu = () => {
-        setAnchorElUser(null);
-    };
     const [open, setOpen] = React.useState(false);
 
     const handleDrawerOpen = () => {
-        setOpen(true);
+        setOpen(!open);
     };
 
     const handleDrawerClose = () => {
@@ -105,7 +89,7 @@ function ResponsiveAppBar() {
 
     return (
         <AppBar position="static" style={{ backgroundColor: "#1976d200", boxShadow: "none", padding: " 70px 30px" }}>
-            <Toolbar disableGutters style={{ display: "flex" }}>
+            <Toolbar disableGutters style={{ display: "flex", justifyContent: "space-between" }}>
                 <img src={logo} height={"25%"} width={"25%"} />
                 <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: "center", alignItem: "center", flexDirection: "column" } }}>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: "space-around" } }}>
@@ -114,7 +98,7 @@ function ResponsiveAppBar() {
                                 style={{ textTransform: "capitalize" }}
                                 className="font menu"
                                 key={page}
-                                onClick={handleCloseNavMenu}
+                                onClick={handleDrawerClose}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
                             >
                                 {page}
@@ -132,6 +116,7 @@ function ResponsiveAppBar() {
                             />
                         </Search>
                     </div>
+
                 </Box>
                 <>
                     <IconButton
@@ -145,42 +130,44 @@ function ResponsiveAppBar() {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Drawer
-                        sx={{
-                            width: drawerWidth,
-                            '& .MuiDrawer-paper': {
-                                width: drawerWidth,
-                                boxSizing: 'border-box',
-                            },
-                        }}
-                        variant="persistent"
-                        anchor="left"
-                        open={open}
 
-                    >
-                        <DrawerHeader>
-                            <IconButton onClick={handleDrawerClose} backgroundColor="#a705c7">
-                                {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-                            </IconButton>
-                        </DrawerHeader>
-                        <List>
-                            <img src={logo} height={"25%"} width={"25%"} />
-                        </List>
-                        <List>
-                            {pages.map((text, index) => (
-                                <ListItem key={text} disablePadding>
-                                    <ListItemButton>
-                                        <ListItemText primary={text} />
-                                    </ListItemButton>
-                                </ListItem>
-                            ))}
-                        </List>
-                    </Drawer>
                 </>
 
 
             </Toolbar>
+            <Drawer
+                sx={{
+                    width: drawerWidth,
+                    '& .MuiDrawer-paper': {
+                        width: drawerWidth,
+                        boxSizing: 'border-box',
+                        backgroundColor: '#5F0E73',
+                        color: '#FFFFFF',
+                    },
+                }}
+                variant="persistent"
+                anchor="left"
+                open={open}
 
+            >
+                <DrawerHeader>
+                    <IconButton onClick={handleDrawerClose} backgroundColor="#a705c7">
+                        {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+                    </IconButton>
+                </DrawerHeader>
+                <List>
+                    <img src={logo} height={"80%"} width={"80%"} style={{ paddingLeft: "20px" }} />
+                </List>
+                <List>
+                    {pages.map((text, index) => (
+                        <ListItem key={text} disablePadding>
+                            <ListItemButton>
+                                <ListItemText primary={text} />
+                            </ListItemButton>
+                        </ListItem>
+                    ))}
+                </List>
+            </Drawer>
         </AppBar>
     );
 }
