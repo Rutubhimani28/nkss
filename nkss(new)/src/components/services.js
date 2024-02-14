@@ -24,7 +24,6 @@ const services = () => {
             </Grid>
 
             <Grid container
-                // my={{ sm: 10, md: 40 }} py={{ sm: 10, md: 20 }}
                 flexDirection={{ xs: 'column-reverse', sm: 'column-reverse', md: 'row' }}
             >
                 <Grid item xs={12} md={4} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
