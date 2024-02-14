@@ -8,7 +8,10 @@ import about from '../components/asset/images/about.png'
 const services = () => {
     return (
         <Grid className='serviceWraper'>
-            <Grid container >
+            <Grid container
+            // my={{ sm: 10, md: 40 }}
+            // py={{ sm: 10, md: 20 }}
+            >
                 <Grid item xs={12} md={8} style={{ display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }} textAlign={"center"}>
                     <div >
                         <Typography className='font' fontSize={{ sm: "40px", md: "80px" }} marginInlineStart={{ md: "80px" }} variant='h6'>Explore Our Services</Typography>
