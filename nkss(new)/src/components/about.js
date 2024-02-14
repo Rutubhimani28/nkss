@@ -10,7 +10,7 @@ import goalogo from '../components/asset/images/GoA Logo.png'
 const About = () => {
     return (
         <Grid className='aboutWraper'>
-            <Box bgcolor={"#f9d4ff"} mx={{ xs: 2, sm: 6, md: 8 }} p={4} borderRadius={"86px"} mb={{ sm: 6, md: 20 }} >
+            <Box bgcolor={"#f9d4ff"} mx={{ xs: 2, sm: 6, md: 8 }} p={4} borderRadius={"86px"} mb={{ sm: 6, md: 20 }} position={"relative"} >
                 <Grid container columnSpacing={{ xs: 1 }} >
                     <Grid item xs={12} md={4}>
                         <img src={about} className='servicesImg' />
