@@ -88,7 +88,7 @@ function ResponsiveAppBar() {
     const theme = useTheme();
 
     return (
-        <AppBar position="static" style={{ backgroundColor: "#1976d200", boxShadow: "none", padding: " 70px 30px" }}>
+        <AppBar position="static" sx={{ backgroundColor: "#1976d200", boxShadow: "none", padding: { xs: "30px 30px", sm: "30px 30px", md: " 70px 30px" } }} >
             <Toolbar disableGutters style={{ display: "flex", justifyContent: "space-between" }}>
                 <img src={logo} height={"25%"} width={"25%"} />
                 <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: "center", alignItem: "center", flexDirection: "column" } }}>
@@ -155,18 +155,19 @@ function ResponsiveAppBar() {
                         {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
                     </IconButton>
                 </DrawerHeader>
-                <List>
-                    <img src={logo} height={"80%"} width={"80%"} style={{ paddingLeft: "20px" }} />
+                <List style={{ textAlign: "center" }}>
+                    <img src={logo} height={"90%"} width={"80%"} style={{ paddingLeft: "20px" }} />
                 </List>
                 <List>
                     {pages.map((text, index) => (
                         <ListItem key={text} disablePadding>
-                            <ListItemButton>
+                            <ListItemButton style={{ textAlign: "center" }}>
                                 <ListItemText primary={text} />
                             </ListItemButton>
                         </ListItem>
                     ))}
                 </List>
+
             </Drawer>
         </AppBar>
     );

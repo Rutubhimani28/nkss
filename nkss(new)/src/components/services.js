@@ -29,10 +29,10 @@ const services = () => {
             <Grid container
                 flexDirection={{ xs: 'column-reverse', sm: 'column-reverse', md: 'row' }}
             >
-                <Grid item xs={12} md={4} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                <Grid item xs={12} md={5} sx={{ display: "flex", justifyContent: { xs: "center", md: "end" }, alignItems: "center" }}>
                     <img src={start} height={"100%"} className='aboutimg2' width={"100%"} />
                 </Grid>
-                <Grid item xs={12} md={8} textAlign={"center"} style={{ display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }} >
+                <Grid item xs={12} md={7} textAlign={"center"} style={{ display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }} >
                     <div>
                         <Typography className='font' fontSize={{ sm: "40px", md: "80px" }} marginInlineStart={{ md: "80px" }} variant='h6'>Explore Workshops</Typography>
                         <button variant="contained" className='startBtn' >
@@ -41,7 +41,7 @@ const services = () => {
                     </div>
                 </Grid>
             </Grid>
-        </Grid>
+        </Grid >
     )
 }
 

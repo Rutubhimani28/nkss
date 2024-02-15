@@ -25,22 +25,22 @@ const About = () => {
                 </Grid>
             </Box>
             <Box py={5} mx={{ xs: 2, sm: 6, md: 8 }}>
-                <Typography className='font' fontSize={{ sm: "40px", md: "80px" }} textAlign={"center"} variant='h6'> Our Clients</Typography>
+                <Typography className='font' fontSize={{ xs: "40px", sm: "40px", md: "80px" }} textAlign={"center"} > Our Clients</Typography>
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                     <Grid container rowSpacing={1} columnSpacing={{ xs: 1 }} justifyContent={"center"}>
-                        <Grid item xs={12} sm={4} md={2.3} py={2} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+                        <Grid item xs={12} sm={4} md={2.3} py={{ xs: 3, sm: 3, md: 2 }} display={"flex"} justifyContent={"center"} alignItems={"center"}>
                             <div className='clientBox'></div>
                         </Grid>
-                        <Grid item xs={12} sm={4} md={2.3} py={2} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+                        <Grid item xs={12} sm={4} md={2.3} py={{ xs: 3, sm: 3, md: 2 }} display={"flex"} justifyContent={"center"} alignItems={"center"}>
                             <div className='clientBox'></div>
                         </Grid>
-                        <Grid item xs={12} sm={4} md={2.3} py={2} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+                        <Grid item xs={12} sm={4} md={2.3} py={{ xs: 4, sm: 3, md: 2 }} display={"flex"} justifyContent={"center"} alignItems={"center"}>
                             <div className='clientBox'><img src={goalogo} style={{ marginLeft: "-11px" }} /></div>
                         </Grid>
-                        <Grid item xs={12} sm={4} md={2.3} py={2} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+                        <Grid item xs={12} sm={4} md={2.3} py={{ xs: 3, sm: 3, md: 2 }} display={"flex"} justifyContent={"center"} alignItems={"center"}>
                             <div className='clientBox'></div>
                         </Grid>
-                        <Grid item xs={12} sm={4} md={2.3} py={2} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+                        <Grid item xs={12} sm={4} md={2.3} py={{ xs: 3, sm: 3, md: 2 }} display={"flex"} justifyContent={"center"} alignItems={"center"}>
                             <div className='clientBox'></div>
                         </Grid>
 
