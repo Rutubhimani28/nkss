@@ -118,7 +118,7 @@ body {
 .aboutWraper {
   background-image: url(../src/components/asset/images/aboutbg.png);
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
   /* background-size: cover; */
   width: 100%;
 }
