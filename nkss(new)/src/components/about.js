@@ -10,14 +10,14 @@ import goalogo from '../components/asset/images/GoA Logo.png'
 const About = () => {
     return (
         <Grid className='aboutWraper'>
-            <Box bgcolor={"#f9d4ff"} mx={{ xs: 2, sm: 6, md: 8 }} p={4} borderRadius={"86px"} mb={{ sm: 6, md: 20 }} position={"relative"} >
+            <Box bgcolor={"#f9d4ff"} mx={{ xs: 2, sm: 6, md: 8 }} my={{ xs: 2, sm: 6, md: 14 }} p={4} borderRadius={"86px"} mb={{ sm: 6, md: 20 }} position={"relative"} >
                 <Grid container columnSpacing={{ xs: 1 }} >
                     <Grid item xs={12} md={4}>
                         <img src={about} className='servicesImg' />
                     </Grid>
-                    <Grid item xs={12} md={8} textAlign={"center"} display={"flex"} flexDirection={"column"} justifyContent={"space-between"} alignItems={"center"}>
+                    <Grid item xs={12} md={8} textAlign={"center"} display={"flex"} flexDirection={"column"} justifyContent={"space-between"} alignItems={"center"} p={4}>
                         <Typography variant='h4' className='font' color={"#A805CD"} fontSize={{ sm: "40px", md: "80px" }}>About Us</Typography>
-                        <Typography variant='h6' py={1} className='khula' color={"#4E4D78"} fontSize={{ sm: "20px", md: "30px" }}>Nkss Digital Services helps you elevate your online presence with expert management, development, and design solutions. Craft captivating experiences, optimize your processes, and achieve tangible results for all your digital goals.</Typography>
+                        <Typography variant='h6' py={1} className='khula' color={"#4E4D78"} fontSize={{ sm: "25px", md: "35px" }}>Nkss Digital Services helps you elevate your online presence with expert management, development, and design solutions. Craft captivating experiences, optimize your processes, and achieve tangible results for all your digital goals.</Typography>
                         <button variant="contained" className='seemore' >
                             <span> See more</span><ChevronRightIcon className='arrowicon1' />
                         </button>
@@ -48,7 +48,7 @@ const About = () => {
                 </div>
             </Box>
             <Grid sx={{ padding: { sm: "30px 0", md: "60px 0" } }}>
-                <Box className='footer' mx={{ xs: 2, sm: 4, md: 8 }}>
+                <Box className='footer' m={{ xs: 2, sm: 5, md: 10 }}>
                     <Grid container rowSpacing={1} columnSpacing={{ xs: 1 }} justifyContent={{ sm: "left", md: "center" }}>
                         <Grid item sm={12} md={6} lg={3} display={"flex"} justifyContent={{ sm: "left", md: "center" }}>
                             <div >
@@ -94,7 +94,7 @@ const About = () => {
                                 </ul>
                             </div>
                         </Grid>
-                        <Grid item sm={12} md={6} lg={3} display={"flex"} justifyContent={"center"}>
+                        <Grid item sm={12} md={6} lg={3} display={"flex"} justifyContent={{ sm: "left", md: "center" }}>
                             <div >
                                 <img src={logo} height={"200px"} width={"200px"} />
                             </div>

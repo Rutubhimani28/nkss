@@ -90,6 +90,7 @@ function ResponsiveAppBar() {
     return (
         <AppBar position="static" sx={{ backgroundColor: "#1976d200", boxShadow: "none", padding: { xs: "30px 30px", sm: "30px 30px", md: " 70px 30px" } }} >
             <Toolbar disableGutters style={{ display: "flex", justifyContent: "space-between" }}>
+                <div className='headerBg'></div>
                 <img src={logo} height={"25%"} width={"25%"} />
                 <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: "center", alignItem: "center", flexDirection: "column" } }}>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: "space-around" } }}>

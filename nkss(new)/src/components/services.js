@@ -8,13 +8,11 @@ import about from '../components/asset/images/about.png'
 const services = () => {
     return (
         <Grid className='serviceWraper'>
-            <Grid container
-            // my={{ sm: 10, md: 40 }}
-            // py={{ sm: 10, md: 20 }}
+            <Grid container           
             >
-                <Grid item xs={12} md={8} style={{ display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }} textAlign={"center"}>
+                <Grid item xs={12} md={8} style={{ display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }} textAlign={"center"} my={3}>
                     <div >
-                        <Typography className='font' fontSize={{ sm: "40px", md: "80px" }} marginInlineStart={{ md: "80px" }} variant='h6'>Explore Our Services</Typography>
+                        <Typography className='font' fontSize={{ sm: "45px", md: "85px" }} marginInlineStart={{ md: "80px" }} variant='h6'>Explore Our Services</Typography>
                         <button variant="contained" className='startBtn' >
                             <span style={{ marginTop: "4px" }}>  Get Started </span><ChevronRightIcon className='arrowicon' />
                         </button>
@@ -34,14 +32,14 @@ const services = () => {
                 </Grid>
                 <Grid item xs={12} md={7} textAlign={"center"} style={{ display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }} >
                     <div>
-                        <Typography className='font' fontSize={{ sm: "40px", md: "80px" }} marginInlineStart={{ md: "80px" }} variant='h6'>Explore Workshops</Typography>
+                        <Typography className='font' fontSize={{ sm: "45px", md: "85px" }} marginInlineStart={{ md: "80px" }} variant='h6'>Explore Workshops</Typography>
                         <button variant="contained" className='startBtn' >
                             <span style={{ marginTop: "4px" }}>  Get Started </span><ChevronRightIcon className='arrowicon' />
                         </button>
                     </div>
                 </Grid>
             </Grid>
-        </Grid >
+        </Grid>
     )
 }
 
